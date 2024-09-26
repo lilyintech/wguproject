@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Get Started</title>
+
+        <script>
+          function ValidateEmail(inputText)
+          {
+          var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+          if(inputText.value.match(mailformat))
+          {
+          alert("Valid email address!");
+          document.form1.text1.focus();
+          return true;
+          }
+          else
+          {
+          alert("You have entered an invalid email address!");
+          document.form1.text1.focus();
+          return false;
+          }
+          }
+         </script>
+
+    </head>
+<style>
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #333;
+  color: white;
+  background-image: url("cornfield.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+
+.row {  
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #1414D1;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #1414D1;
+}
+
+div {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+  <nav>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="explorespringfield.html">Explore Springfield</a>
+        <a href="exploreoakpark.html">Explore Oak Park</a>
+        <a href="explorenaperville.html">Explore Naperville</a>
+        <a href="thingstodo.html">Things To Do</a>
+        <a href="https://idot.illinois.gov/transportation-system/network-overview/highway-system/maps/highway.html" target="_blank">Maps</a>
+        <a href="getstarted.html" class="right">Get Started</a>
+      </div>
+      </nav>
+
+      <header>
+      <div class="header">
+        <h1>Get Started</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <button>Plan Your Trip</button>
+        </div>
+      </header>
+
+        <section>
+            <h1>Contact Information</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </section> 
+        
+
+      <div class="mail">
+        
+        <form name="form1" action="#">
+          <label for="first">First Name:</label>
+          <input type="text" name="first" id="first" placeholder="Your first name..." required>
+          <br>
+          <label for="last">Last Name:</label>
+          <input type="text" name="last" id="last" placeholder="Your last name..." required>
+          <br>
+          <label for="email">Email Address:</label>
+          <input type="text" input type="email" name="email" id="email" placeholder="Your email address..." required>
+          <br>
+        
+          <label for="confirm">Confirm Email:</label>
+          <input type="text" name="text1" id="confirm" placeholder="Confirm your email address..." required>
+          <br>
+          <label for="lname">Message</label>
+          <input type="text" id="message" name="message" placeholder="Your message..">
+
+          <input type="submit" value="Submit" name="submit" value="Submit" onclick="ValidateEmail(document.form1.text1)">
+        </form>
+        </div>
+      
+      
+        <div class="footer">
+          <div class="navbar">
+          <a href="index.html">Home</a>
+          <a href="explorespringfield.html">Explore Springfield</a>
+          <a href="exploreoakpark.html">Explore Oak Park</a>
+          <a href="explorenaperville.html">Explore Naperville</a>
+          <a href="thingstodo.html">Things To Do</a>
+          <a href="https://idot.illinois.gov/transportation-system/network-overview/highway-system/maps/highway.html" target="_blank">Maps</a>
+          <a href="getstarted.html" class="right">Get Started</a>
+          </div>
+        </div>
+
+</body>
+</html>
